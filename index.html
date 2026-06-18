@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     
@@ -9,10 +9,10 @@
 
     <!-- Open Graph / Facebook / WhatsApp Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tinufarsan.com/"> <!-- Use a placeholder URL that can be easily edited -->
+    <meta property="og:url" content="https://tinufarsan.com/">
     <meta property="og:title" content="Tinu Farsan Mart - Artisan Quality Since 1973">
     <meta property="og:description" content="Prantij's Traditional Taste – Have a bite of 50+ Years Old Legacy! 100% Original Fresh & Crunchy Gujarati Snacks in premium zipper pouch packing.">
-    <meta property="og:image" content="product_1.png"> <!-- Sets the special preview image for sharing -->
+    <meta property="og:image" content="product_1.png">
 
     <!-- Twitter Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="checkbox" id="lang-toggle" hidden>
 
     <header>
         <div class="nav-container">
@@ -38,214 +39,247 @@
             </div>
             
             <nav>
-                <a href="#home">Home</a>
-                <a href="#menu">Packed Items</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#catering">Gifting</a>
-                <a href="#story">Our Story</a>
-                <a href="#contact">Location</a>
+                <a href="#home"><span class="lang-en">Home</span><span class="lang-gu">મુખ્ય પૃષ્ઠ</span></a>
+                <a href="#menu"><span class="lang-en">Packed Items</span><span class="lang-gu">પેક કરેલ નાસ્તો</span></a>
+                <a href="#gallery"><span class="lang-en">Gallery</span><span class="lang-gu">ગેલેરી</span></a>
+                <a href="#catering"><span class="lang-en">Gifting</span><span class="lang-gu">ભેટ વિતરણ</span></a>
+                <a href="#story"><span class="lang-en">Our Story</span><span class="lang-gu">અમારો ઇતિહાસ</span></a>
+                <a href="#contact"><span class="lang-en">Location</span><span class="lang-gu">સંપર્ક</span></a>
             </nav>
             
-            <a href="https://wa.me/919998563318" target="_blank" rel="noopener" class="btn-luxury order-desk-btn">Order Desk</a>
+            <div style="display:flex; align-items:center; gap:20px;">
+                <label for="lang-toggle" class="lang-switch">EN | ગુજ</label>
+                <a href="https://wa.me/919998563318" target="_blank" rel="noopener" class="btn-luxury order-desk-btn">
+                    <span class="lang-en">Order Desk</span><span class="lang-gu">ઓર્ડર ડેસ્ક</span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- 1. HOME -->
         <section id="home" class="page">
-            <div class="editorial-banner fade-in">
-                <h1>Prantij's Traditional Taste – Have a bite of 50+ Years Old Legacy!</h1>
-                <p>Tinu's Original Premium Packed Items – Ekdum Fresh Ane Crunchy! Since 1973 thi ordered authentic Gujarati taste.</p>
+            <div class="editorial-banner">
+                <h1>
+                    <span class="lang-en">Prantij's Traditional Taste – Have a bite of 50+ Years Old Legacy!</span>
+                    <span class="lang-en-block section-subhead" style="margin-top:20px;">Over 50 Years of Culinary Heritage, Reimagined for the Modern Connoisseur.</span>
+                    <span class="lang-gu">પ્રાંતિજનો પારંપરિક સ્વાદ - ૫૦+ વર્ષ જૂની ધરોહરનો આનંદ માણો!</span>
+                    <span class="lang-gu-block section-subhead" style="margin-top:20px;">૫૦ વર્ષથી પણ વધુ જૂની પરંપરાગત વાનગીઓનો અસલી સ્વાદ.</span>
+                </h1>
             </div>
             
-            <div class="highlight-focus fade-in">
+            <div class="highlight-focus">
                 <div class="highlight-content">
-                    <h2>Premium Packing</h2>
-                    <p>100% Original Taste. 1973 થી ચાલતી આવતી અમારી ફેમસ ક્વોલિટી હવે એકદમ નવા પ્રીમિયમ પેકિંગમાં. જેથી તમારો નાસ્તો રહે લાંબા સમય સુધી એકદમ ફ્રેશ અને ક્રન્ચી.</p>
-                    <a href="#menu" class="btn-luxury">પેક કરેલો નાસ્તો જુઓ</a>
+                    <h2><span class="lang-en">Premium Packing</span><span class="lang-gu">પ્રીમિયમ પેકિંગ</span></h2>
+                    <p class="lang-en">100% Original Taste. Our famous quality since 1973 is now available in brand-new premium packaging, ensuring your snacks stay perfectly fresh and crunchy for a longer time.</p>
+                    <p class="lang-gu">100% અસલી સ્વાદ. ૧૯૭૩ થી ચાલતી આવતી અમારી ફેમસ ક્વોલિટી હવે એકદમ નવા પ્રીમિયમ પેકિંગમાં, જેથી તમારો નાસ્તો લાંબા સમય સુધી ફ્રેશ અને ક્રન્ચી રહે.</p>
+                    <a href="#menu" class="btn-luxury"><span class="lang-en">View Packed Snacks</span><span class="lang-gu">પેક કરેલો નાસ્તો જુઓ</span></a>
                 </div>
                 <div class="highlight-image">
-                    <img src="product_1.png" alt="Special Dry Bhel Pouch">
+                    <div class="img-skeleton"><img src="product_1.png" alt="Special Dry Bhel Pouch"></div>
                 </div>
             </div>
         </section>
 
         <!-- 2. POUCH PRODUCTS -->
         <section id="menu" class="page">
-            <h2 class="grid-title fade-in">Premium <span>Packed</span> Items</h2>
+            <h2 class="grid-title"><span class="lang-en">Premium <span>Packed</span> Items</span><span class="lang-gu">પ્રીમિયમ <span>પેક</span> નાસ્તો</span></h2>
+            <p class="section-subhead lang-en-block">Handpicked premium snacks sealed flawlessly to retain absolute freshness.</p>
+            <p class="section-subhead lang-gu-block">ખાસ આધુનિક પેકિંગમાં લાંબા સમય સુધી ક્રન્ચી રહેતો નાસ્તો.</p>
             <div class="luxury-grid">
                 <!-- Item 1 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_1.png" alt="Special Dry Bhel"></div>
-                    <h3>Special Dry Bhel</h3>
-                    <p>Tinu’s Special Dry Bhel – Puffed rice, crispy sev, ane special spices નો perfect mix. Long travel માટે એકદમ safe packaging!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Special%20Dry%20Bhel" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_1.png" alt="Special Dry Bhel"></div></div>
+                    <h3 class="lang-en">Special Dry Bhel</h3><h3 class="lang-gu">સ્પેશિયલ ડ્રાય ભેળ</h3>
+                    <p class="lang-en">Tinu’s Special Dry Bhel – The perfect mix of puffed rice, crispy sev, and special spices. Safe packaging for long travel!</p>
+                    <p class="lang-gu">ટીનુની સ્પેશિયલ ડ્રાય ભેળ – મમરા, કડક સેવ અને સ્પેશિયલ મસાલાનું શ્રેષ્ઠ મિશ્રણ. લાંબી મુસાફરી માટે સેફ પેકિંગ!</p>
+                    <a href="#product-1" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 2 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_2.png" alt="Kaju Katri"></div>
-                    <h3>Kaju Katri</h3>
-                    <p>Premium Quality Kaju Katri – Pure kaju ane sugar માંથી બનેલી મોઢામાં ઓગળી જાય તેવી સોફ્ટ કાજુકતરી. ગિફ્ટ આપવા માટે એકદમ બેસ્ટ!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Kaju%20Katri" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_2.png" alt="Kaju Katri"></div></div>
+                    <h3 class="lang-en">Kaju Katri</h3><h3 class="lang-gu">કાજુ કતરી</h3>
+                    <p class="lang-en">Premium Quality Kaju Katri – Soft, melt-in-the-mouth cashew sweets made from pure kaju and sugar. Best for gifting!</p>
+                    <p class="lang-gu">પ્રીમિયમ ક્વોલિટી કાજુકતરી – શુદ્ધ કાજુ અને ખાંડમાંથી બનેલી સોફ્ટ મીઠાઈ. ગિફ્ટ માટે શ્રેષ્ઠ!</p>
+                    <a href="#product-2" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 3 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_3.png" alt="Masala Papdi"></div>
-                    <h3>Masala Papdi</h3>
-                    <p>Masala Papdi Namkeen – અજમો, કાળા મરી અને દેશી મસાલાવાળી કરકરી પાપડી. સવાર-સાંજની ગરમ ચા સાથે ખાવાની એકદમ મજા પડી જાય!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Masala%20Papdi" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_3.png" alt="Masala Papdi"></div></div>
+                    <h3 class="lang-en">Masala Papdi</h3><h3 class="lang-gu">મસાલા પાપડી</h3>
+                    <p class="lang-en">Masala Papdi Namkeen – Crunchy papdi with ajwain, black pepper, and desi spices. Perfect with your hot morning or evening tea!</p>
+                    <p class="lang-gu">મસાલા પાપડી – અજમો, કાળા મરી અને દેશી મસાલાવાળી કરકરી પાપડી. ગરમ ચા સાથે ખાવાની મજા!</p>
+                    <a href="#product-3" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 4 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_4.png" alt="Patra"></div>
-                    <h3>Patra</h3>
-                    <p>Gujarati Patra (Sealed Pack) – અસલી ગુજરાતી ટેસ્ટવાળા ખાટા-મીઠા પાત્રા. એકદમ પ્રીમિયમ પેકિંગમાં જેથી એનો ટેસ્ટ અને સોફ્ટનેસ એવા ને એવા જ રહે.</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Patra" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_4.png" alt="Patra"></div></div>
+                    <h3 class="lang-en">Patra</h3><h3 class="lang-gu">પાત્રા</h3>
+                    <p class="lang-en">Gujarati Patra (Sealed Pack) – Sweet and sour patra with an authentic Gujarati taste. Premium packaging keeps it fresh and soft.</p>
+                    <p class="lang-gu">ગુજરાતી પાત્રા (સીલ પેક) – ખાટા-મીઠા પાત્રા. પ્રીમિયમ પેકિંગથી એનો ટેસ્ટ અને સોફ્ટનેસ અકબંધ રહે છે.</p>
+                    <a href="#product-4" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 5 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_5.png" alt="Motichur Laddu"></div>
-                    <h3>Motichur Laddu</h3>
-                    <p>Desi Ghee Motichur Laddu – શુદ્ધ દેશી ઘી અને ઝીણી બુંદીમાંથી બનેલા જ્યુસી મોતીચૂર લાડુ. તહેવારો અને પ્રસંગોની શાન!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Motichur%20Laddu" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_5.png" alt="Motichur Laddu"></div></div>
+                    <h3 class="lang-en">Motichur Laddu</h3><h3 class="lang-gu">મોતીચૂર લાડુ</h3>
+                    <p class="lang-en">Desi Ghee Motichur Laddu – Juicy laddu made from pure desi ghee and fine bundi. The pride of festivals and occasions!</p>
+                    <p class="lang-gu">દેશી ઘી મોતીચૂર લાડુ – શુદ્ધ દેશી ઘી અને ઝીણી બુંદીના જ્યુસી લાડુ. તહેવારોની શાન!</p>
+                    <a href="#product-5" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 6 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_6.png" alt="Bundi Laddu"></div>
-                    <h3>Bundi Laddu</h3>
-                    <p>Traditional Bundi Laddu – કેસરી કલરના ગોળ-ગોળ મીઠા બુંદીના લાડુ. પ્રસાદી માટે અને સ્વીટ બોક્સ માટે સદાબહાર ચોઇસ.</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Bundi%20Laddu" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_6.png" alt="Bundi Laddu"></div></div>
+                    <h3 class="lang-en">Bundi Laddu</h3><h3 class="lang-gu">બુંદી લાડુ</h3>
+                    <p class="lang-en">Traditional Bundi Laddu – Sweet, saffron-colored round bundi laddu. An evergreen choice for prasadi and sweet boxes.</p>
+                    <p class="lang-gu">પરંપરાગત બુંદી લાડુ – કેસરી કલરના મીઠા બુંદીના લાડુ. પ્રસાદી અને સ્વીટ બોક્સ માટે સદાબહાર ચોઇસ.</p>
+                    <a href="#product-6" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 7 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_7.png" alt="Sing Bhujiya"></div>
-                    <h3>Sing Bhujiya</h3>
-                    <p>Spicy Sing Bhujiya – બેસનનું કોટિંગ કરેલા મસાલેદાર કડક સીંગદાણા. એકવાર ખાવાનું ચાલુ કરશો તો હાથ રોકાશે નહીં, એટલા ટેસ્ટી!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Sing%20Bhujiya" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_7.png" alt="Sing Bhujiya"></div></div>
+                    <h3 class="lang-en">Sing Bhujiya</h3><h3 class="lang-gu">સીંગ ભુજિયા</h3>
+                    <p class="lang-en">Spicy Sing Bhujiya – Crispy peanuts coated with spicy gram flour. So tasty you won't be able to stop eating them!</p>
+                    <p class="lang-gu">મસાલેદાર સીંગ ભુજિયા – બેસનનું કોટિંગ કરેલા કડક સીંગદાણા. એટલા ટેસ્ટી કે હાથ રોકાશે નહીં!</p>
+                    <a href="#product-7" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
                 <!-- Item 8 -->
-                <div class="luxury-card fade-in">
-                    <div class="card-img-wrap"><img src="product_8.png" alt="Tam Tam"></div>
-                    <h3>Tam Tam</h3>
-                    <p>Famous Tam Tam Namkeen – તીખો અને ચટપટો ગુજરાતી નાસ્તો. ક્રન્ચી સેવ અને ગાંઠિયાનું મસ્ત કોમ્બિનેશન, અસલી પ્રાનતિજ નો સ્વાદ!</p>
-                    <a href="https://wa.me/919998563318?text=Inquiry:%20Tam%20Tam" class="btn-luxury" target="_blank" rel="noopener">Order via WhatsApp</a>
+                <div class="luxury-card">
+                    <div class="card-img-wrap"><div class="img-skeleton"><img src="product_8.png" alt="Tam Tam"></div></div>
+                    <h3 class="lang-en">Tam Tam</h3><h3 class="lang-gu">તમ તમ</h3>
+                    <p class="lang-en">Famous Tam Tam Namkeen – A spicy and tangy Gujarati snack. A great combination of crunchy sev and gathiya!</p>
+                    <p class="lang-gu">પ્રખ્યાત તમ તમ – તીખો અને ચટપટો નાસ્તો. ક્રન્ચી સેવ અને ગાંઠિયાનું મસ્ત કોમ્બિનેશન!</p>
+                    <a href="#product-8" class="btn-luxury"><span class="lang-en">View Details</span><span class="lang-gu">વધુ વિગતો જુઓ</span></a>
                 </div>
             </div>
         </section>
 
         <!-- 3. VISUAL GALLERY -->
         <section id="gallery" class="page">
-            <h2 class="grid-title fade-in">Visual <span>Gallery</span></h2>
-            <div class="gallery-collage fade-in">
-                <!-- Image 1: Feature Left -->
-                <div class="gallery-item item-main">
+            <h2 class="grid-title"><span class="lang-en">Visual <span>Gallery</span></span><span class="lang-gu">વિઝ્યુઅલ <span>ગેલેરી</span></span></h2>
+            <p class="section-subhead lang-en-block">A visual journey behind our artisanal production and legacy counters.</p>
+            <p class="section-subhead lang-gu-block">અમારી શુદ્ધતા અને બનાવટની એક ઝાંખી.</p>
+            <div class="gallery-slideshow">
+                <!-- Slide 1 -->
+                <div class="slide slide-1">
                     <img src="gallery_img_1.png" alt="Premium Dry Bhel Pouch">
-                    <div class="gallery-overlay">
-                        <h3>Premium Dry Bhel</h3>
-                        <p>Special packaging with fresh ingredients</p>
+                    <div class="slide-caption">
+                        <h3 class="lang-en">Premium Dry Bhel</h3><h3 class="lang-gu">પ્રીમિયમ ડ્રાય ભેળ</h3>
+                        <p class="lang-en">Special packaging with fresh ingredients</p><p class="lang-gu">ફ્રેશ મસાલા સાથે સ્પેશિયલ પેકિંગ</p>
                     </div>
                 </div>
-                <!-- Image 2: Top Middle -->
-                <div class="gallery-item item-top-mid">
+                <!-- Slide 2 -->
+                <div class="slide slide-2">
                     <img src="gallery_img_2.png" alt="Chef Frying Farsan">
-                    <div class="gallery-overlay">
-                        <h3>Live Action</h3>
-                        <p>Authentic chef frying fresh bhajiya</p>
+                    <div class="slide-caption">
+                        <h3 class="lang-en">Live Action</h3><h3 class="lang-gu">લાઇવ એક્શન</h3>
+                        <p class="lang-en">Authentic chef frying fresh bhajiya</p><p class="lang-gu">તાજા ભજિયા બનાવતા શેફ</p>
                     </div>
                 </div>
-                <!-- Image 4: Top Right -->
-                <div class="gallery-item item-top-right">
+                <!-- Slide 3 -->
+                <div class="slide slide-3">
                     <img src="gallery_img_4.png" alt="Premium Sweet Box">
-                    <div class="gallery-overlay">
-                        <h3>Legacy Heritage</h3>
-                        <p>50+ years of traditional sweet craftsmanship</p>
+                    <div class="slide-caption">
+                        <h3 class="lang-en">Legacy Heritage</h3><h3 class="lang-gu">વિરાસત</h3>
+                        <p class="lang-en">50+ years of traditional sweet craftsmanship</p><p class="lang-gu">૫૦ વર્ષની મીઠાઈ બનાવવાની કળા</p>
                     </div>
                 </div>
-                <!-- Image 3: Bottom Middle -->
-                <div class="gallery-item item-bot-mid">
+                <!-- Slide 4 -->
+                <div class="slide slide-4">
                     <img src="gallery_img_3.png" alt="Corporate Gifting Box">
-                    <div class="gallery-overlay">
-                        <h3>Corporate Gifting</h3>
-                        <p>Luxury maroon & gold signature boxes</p>
+                    <div class="slide-caption">
+                        <h3 class="lang-en">Corporate Gifting</h3><h3 class="lang-gu">કોર્પોરેટ ગિફ્ટિંગ</h3>
+                        <p class="lang-en">Luxury maroon & gold signature boxes</p><p class="lang-gu">લક્ઝરી મરૂન અને ગોલ્ડ બોક્સ</p>
                     </div>
                 </div>
-                <!-- Image 5: Bottom Right -->
-                <div class="gallery-item item-bot-right">
+                <!-- Slide 5 -->
+                <div class="slide slide-5">
                     <img src="gallery_img_5.png" alt="High Quality Ingredients">
-                    <div class="gallery-overlay">
-                        <h3>Pure Ingredients</h3>
-                        <p>Shuddha Singtel & fresh spices</p>
+                    <div class="slide-caption">
+                        <h3 class="lang-en">Pure Ingredients</h3><h3 class="lang-gu">શુદ્ધ સામગ્રી</h3>
+                        <p class="lang-en">Shuddha Singtel & fresh spices</p><p class="lang-gu">શુદ્ધ સીંગતેલ અને તાજા મસાલા</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 4. LUXURY CATERING & GIFTING -->
-        <section id="catering" class="page fade-in">
+        <section id="catering" class="page">
             <div class="split-view">
                 <div class="split-content">
-                    <h2>Gifting & Catering</h2>
-                    <p>લગ્નપ્રસંગ હોય, ફેમિલી ફંક્શન હોય કે પછી NRI માટે વિદેશ મોકલવાનું સ્પેશિયલ પાર્સલ - અમારું સ્પેશિયલ પેકિંગ અને 100% Original Taste ખાતરીપૂર્વક મળશે. બુકિંગ માટે આજે જ સંપર્ક કરો.</p>
-                    <a href="https://wa.me/919998563318" class="btn-luxury" target="_blank" rel="noopener">બુક કરો</a>
+                    <h2><span class="lang-en">Gifting & Catering</span><span class="lang-gu">ગિફ્ટિંગ અને કેટરિંગ</span></h2>
+                    <p class="lang-en">Whether it's a wedding, family function, or a special parcel to be sent abroad for NRIs - we guarantee our special packaging and 100% Original Taste. Contact us today to book.</p>
+                    <p class="lang-gu">લગ્નપ્રસંગ હોય, ફેમિલી ફંક્શન હોય કે પછી NRI માટે વિદેશ મોકલવાનું સ્પેશિયલ પાર્સલ - અમારું સ્પેશિયલ પેકિંગ અને 100% અસલી સ્વાદ ખાતરીપૂર્વક મળશે. બુકિંગ માટે આજે જ સંપર્ક કરો.</p>
+                    <a href="https://wa.me/919998563318" class="btn-luxury" target="_blank" rel="noopener"><span class="lang-en">Book Now</span><span class="lang-gu">બુક કરો</span></a>
                 </div>
                 <div class="split-image">
-                    <img src="catering_event.png" alt="Luxury Event Catering">
+                    <div class="img-skeleton" style="height:100%;"><img src="catering_event.png" alt="Luxury Event Catering" style="height:100%; object-fit:cover;"></div>
                 </div>
             </div>
         </section>
 
         <!-- 5. OUR STORY -->
         <section id="story" class="page">
-            <h2 class="grid-title fade-in">Our Story <span>(અમારો ઇતિહાસ)</span></h2>
-            <div class="timeline fade-in">
-                <div class="timeline-item fade-in-left">
+            <h2 class="grid-title"><span class="lang-en">Our <span>Story</span></span><span class="lang-gu">અમારો <span>ઇતિહાસ</span></span></h2>
+            <p class="section-subhead lang-en-block">The evolutionary timeline of Prantij’s most trusted flavor house.</p>
+            <p class="section-subhead lang-gu-block">પ્રાંતિજથી શરૂ થયેલી અસલી સ્વાદની સફર.</p>
+            <div class="timeline">
+                <div class="timeline-item">
                     <div class="timeline-year">1973</div>
-                    <h3>શરૂઆત (The Genesis)</h3>
-                    <p>સાબરકાંઠાના પ્રાંતિજમાં 1973 માં સ્થપાયેલી અમારી દુકાન, અસલી ગુજરાતી સ્વાદ પીરસવાની એક નાનકડી શરૂઆત હતી.</p>
+                    <h3 class="lang-en">The Genesis</h3><h3 class="lang-gu">શરૂઆત</h3>
+                    <p class="lang-en">Established in Prantij in 1973, our shop was a humble beginning to serving authentic Gujarati snacks.</p>
+                    <p class="lang-gu">સાબરકાંઠાના પ્રાંતિજમાં ૧૯૭૩ માં સ્થપાયેલી અમારી દુકાન, અસલી ગુજરાતી સ્વાદ પીરસવાની એક નાનકડી શરૂઆત હતી.</p>
                 </div>
-                <div class="timeline-item fade-in-right">
+                <div class="timeline-item">
                     <div class="timeline-year">1990</div>
-                    <h3>બેસ્ટ ક્વોલિટી (Mastering the Craft)</h3>
-                    <p>વર્ષોની મહેનત અને અમારા ખાસ મસાલાઓથી અમે એક અનોખો અને ઓરિજિનલ ટેસ્ટ બનાવ્યો છે.</p>
+                    <h3 class="lang-en">Mastering the Craft</h3><h3 class="lang-gu">બેસ્ટ ક્વોલિટી</h3>
+                    <p class="lang-en">Through years of hard work and our secret spices, we created a unique and original taste.</p>
+                    <p class="lang-gu">વર્ષોની મહેનત અને અમારા ખાસ મસાલાઓથી અમે એક અનોખો અને ઓરિજિનલ ટેસ્ટ બનાવ્યો છે.</p>
                 </div>
-                <div class="timeline-item fade-in-left">
+                <div class="timeline-item">
                     <div class="timeline-year">2010</div>
-                    <h3>અસલી સ્વાદ (100% Original Taste)</h3>
-                    <p>ફક્ત શુદ્ધ સીંગતેલનો ઉપયોગ કરીને, પ્રાંતિજમાં સૌથી ફેમસ ફરસાણ હાઉસ તરીકે અમારી ઓળખ બનાવી.</p>
+                    <h3 class="lang-en">100% Original Taste</h3><h3 class="lang-gu">અસલી સ્વાદ</h3>
+                    <p class="lang-en">By exclusively using pure peanut oil, we established our identity as the most famous farsan house in Prantij.</p>
+                    <p class="lang-gu">ફક્ત શુદ્ધ સીંગતેલનો ઉપયોગ કરીને, પ્રાંતિજમાં સૌથી ફેમસ ફરસાણ હાઉસ તરીકે અમારી ઓળખ બનાવી.</p>
                 </div>
-                <div class="timeline-item fade-in-right">
+                <div class="timeline-item">
                     <div class="timeline-year">Present</div>
-                    <h3>પ્રીમિયમ પેકિંગ (Premium Packing)</h3>
-                    <p>50 વર્ષની અમારી આ પરંપરા હવે આધુનિક અને પ્રીમિયમ ઝિપર પાઉચમાં, જેથી દુનિયાના કોઈ પણ ખૂણે સ્વાદ રહે અકબંધ.</p>
+                    <h3 class="lang-en">Premium Packing</h3><h3 class="lang-gu">પ્રીમિયમ પેકિંગ</h3>
+                    <p class="lang-en">Our 50-year tradition now comes in modern, premium zipper pouches, so the flavor stays intact anywhere in the world.</p>
+                    <p class="lang-gu">૫૦ વર્ષની અમારી આ પરંપરા હવે આધુનિક અને પ્રીમિયમ ઝિપર પાઉચમાં, જેથી દુનિયાના કોઈ પણ ખૂણે સ્વાદ રહે અકબંધ.</p>
                 </div>
             </div>
         </section>
 
         <!-- 6. FIND US -->
-        <section id="contact" class="page fade-in">
+        <section id="contact" class="page">
+            <h2 class="grid-title"><span class="lang-en">Find <span>Us</span></span><span class="lang-gu">અમારો <span>સંપર્ક</span> કરો</span></h2>
+            <p class="section-subhead lang-en-block">Visit our flagship destination or reach out for priority orders.</p>
+            <p class="section-subhead lang-gu-block">અમારા મુખ્ય આઉટલેટની મુલાકાત લો અથવા ઓર્ડર બુક કરાવો.</p>
             <div class="contact-interface">
                 <div class="contact-details">
-                    <h2>Contact Us</h2>
+                    <h2><span class="lang-en">Contact Us</span><span class="lang-gu">સંપર્ક કરો</span></h2>
                     
                     <div class="detail-row">
-                        <span>સમય (Schedule)</span>
+                        <span class="lang-en">Schedule</span><span class="lang-gu">સમય</span>
                         <p>Everyday Open 08:00 AM – 07:00 PM</p>
                     </div>
                     
                     <div class="detail-row">
-                        <span>ફોન નંબર (Call line)</span>
+                        <span class="lang-en">Call Line</span><span class="lang-gu">ફોન નંબર</span>
                         <p>+91 99985 63318</p>
                     </div>
                     
                     <div class="detail-row">
-                        <span>સરનામું (Address)</span>
-                        <p>Shop No 2/3, Ambedkar Market<br>Bakharia Chowk, Bus Station Road, Prantij</p>
+                        <span class="lang-en">Address</span><span class="lang-gu">સરનામું</span>
+                        <p class="lang-en">Shop No 2/3, Ambedkar Market<br>Bakharia Chowk, Bus Station Road, Prantij</p>
+                        <p class="lang-gu">દુકાન નંબર ૨/૩, આંબેડકર માર્કેટ<br>બખરીયા ચોક, બસ સ્ટેશન રોડ, પ્રાંતિજ</p>
                     </div>
                     
-                    <a href="https://wa.me/919998563318" class="btn-luxury" target="_blank" rel="noopener">Direct Connect</a>
+                    <a href="https://wa.me/919998563318" class="btn-luxury" target="_blank" rel="noopener"><span class="lang-en">Direct Connect</span><span class="lang-gu">સીધો સંપર્ક</span></a>
                 </div>
                 <div class="map-container-premium">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.39343354366!2d72.8559132!3d23.4390509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395db11438f2da67%3A0xc3b832b85e046788!2sBus%20Station%20Road%2C%20Prantij%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1718182283944!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="img-skeleton" style="height:100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.39343354366!2d72.8559132!3d23.4390509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395db11438f2da67%3A0xc3b832b85e046788!2sBus%20Station%20Road%2C%20Prantij%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1718182283944!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0; width:100%; height:100%;"></iframe></div>
                 </div>
             </div>
         </section>
@@ -255,9 +289,9 @@
         <div class="footer-content">
             <p>&copy; 2026 Tinu Farsan Mart. Artisan Quality Since 1973.</p>
             <div class="footer-links">
-                <a href="#modal-disclaimer">Disclaimer</a>
-                <a href="#modal-privacy">Privacy Policy</a>
-                <a href="#modal-cookies">Cookies Policy</a>
+                <a href="#modal-disclaimer"><span class="lang-en">Disclaimer</span><span class="lang-gu">ડિસ્ક્લેમર</span></a>
+                <a href="#modal-privacy"><span class="lang-en">Privacy Policy</span><span class="lang-gu">પ્રાઇવસી પોલિસી</span></a>
+                <a href="#modal-cookies"><span class="lang-en">Cookies Policy</span><span class="lang-gu">કૂકીઝ પોલિસી</span></a>
             </div>
         </div>
     </footer>
@@ -267,8 +301,9 @@
         <a href="#close" class="modal-overlay"></a>
         <div class="modal-content">
             <a href="#close" class="modal-close">&times;</a>
-            <h3>Disclaimer</h3>
-            <p>Products contain allergens like nuts and wheat. Traditional production methods since 1973.</p>
+            <h3 class="lang-en">Disclaimer</h3><h3 class="lang-gu">ડિસ્ક્લેમર</h3>
+            <p class="lang-en">Products contain allergens like nuts and wheat. Traditional production methods since 1973.</p>
+            <p class="lang-gu">પ્રોડક્ટ્સમાં નટ્સ અને ઘઉં જેવી વસ્તુઓનો ઉપયોગ થાય છે. ૧૯૭૩થી પરંપરાગત ઉત્પાદન પદ્ધતિ.</p>
         </div>
     </div>
 
@@ -276,8 +311,9 @@
         <a href="#close" class="modal-overlay"></a>
         <div class="modal-content">
             <a href="#close" class="modal-close">&times;</a>
-            <h3>Privacy Policy</h3>
-            <p>We value your privacy. When using our WhatsApp Order Desk, your contact details are handled securely solely to process your order.</p>
+            <h3 class="lang-en">Privacy Policy</h3><h3 class="lang-gu">પ્રાઇવસી પોલિસી</h3>
+            <p class="lang-en">We value your privacy. When using our WhatsApp Order Desk, your contact details are handled securely solely to process your order.</p>
+            <p class="lang-gu">અમે તમારી ગોપનીયતાનું સન્માન કરીએ છીએ. વોટ્સએપ ઓર્ડર ડેસ્ક દ્વારા આવેલી માહિતી સુરક્ષિત રહે છે.</p>
         </div>
     </div>
 
@@ -285,62 +321,183 @@
         <a href="#close" class="modal-overlay"></a>
         <div class="modal-content">
             <a href="#close" class="modal-close">&times;</a>
-            <h3>Cookies Policy</h3>
-            <p>We use essential micro-cookies to ensure our custom premium design and single-page navigation layout load instantly and load smoothly.</p>
+            <h3 class="lang-en">Cookies Policy</h3><h3 class="lang-gu">કૂકીઝ પોલિસી</h3>
+            <p class="lang-en">We use essential micro-cookies to ensure our custom premium design and single-page navigation layout load instantly and load smoothly.</p>
+            <p class="lang-gu">વેબસાઈટને વધુ સારી બનાવવા માટે અમે જરૂરી કૂકીઝનો ઉપયોગ કરીએ છીએ.</p>
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Scroll Animation Observer
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
-            };
+    <!-- Gallery Lightbox Modals (Pure CSS) -->
+    <div id="lightbox-1" class="full-modal lightbox">
+        <a href="#close" class="modal-close-fs">&times;</a>
+        <div class="lightbox-nav">
+            <a href="#lightbox-5">&#10094;</a>
+            <a href="#lightbox-2">&#10095;</a>
+        </div>
+        <div class="lightbox-content"><img src="gallery_img_1.png" alt="Gallery"></div>
+    </div>
+    <div id="lightbox-2" class="full-modal lightbox">
+        <a href="#close" class="modal-close-fs">&times;</a>
+        <div class="lightbox-nav">
+            <a href="#lightbox-1">&#10094;</a>
+            <a href="#lightbox-3">&#10095;</a>
+        </div>
+        <div class="lightbox-content"><img src="gallery_img_2.png" alt="Gallery"></div>
+    </div>
+    <div id="lightbox-3" class="full-modal lightbox">
+        <a href="#close" class="modal-close-fs">&times;</a>
+        <div class="lightbox-nav">
+            <a href="#lightbox-2">&#10094;</a>
+            <a href="#lightbox-4">&#10095;</a>
+        </div>
+        <div class="lightbox-content"><img src="gallery_img_4.png" alt="Gallery"></div>
+    </div>
+    <div id="lightbox-4" class="full-modal lightbox">
+        <a href="#close" class="modal-close-fs">&times;</a>
+        <div class="lightbox-nav">
+            <a href="#lightbox-3">&#10094;</a>
+            <a href="#lightbox-5">&#10095;</a>
+        </div>
+        <div class="lightbox-content"><img src="gallery_img_3.png" alt="Gallery"></div>
+    </div>
+    <div id="lightbox-5" class="full-modal lightbox">
+        <a href="#close" class="modal-close-fs">&times;</a>
+        <div class="lightbox-nav">
+            <a href="#lightbox-4">&#10094;</a>
+            <a href="#lightbox-1">&#10095;</a>
+        </div>
+        <div class="lightbox-content"><img src="gallery_img_5.png" alt="Gallery"></div>
+    </div>
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+    <!-- Product Detail Modals (Pure CSS) -->
+    <div id="product-1" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_1.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Special Dry Bhel</h2><h2 class="lang-gu">સ્પેશિયલ ડ્રાય ભેળ</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>45 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Puffed Rice, Sev, Peanuts, Spices</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹250 / 500g</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Special%20Dry%20Bhel" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-2" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_2.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Kaju Katri</h2><h2 class="lang-gu">કાજુ કતરી</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>20 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Pure Kaju, Sugar</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹900 / 1kg</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Kaju%20Katri" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-3" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_3.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Masala Papdi</h2><h2 class="lang-gu">મસાલા પાપડી</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>30 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Gram flour, Ajwain, Black pepper</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹280 / 500g</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Masala%20Papdi" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-4" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_4.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Patra</h2><h2 class="lang-gu">પાત્રા</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>10 Days (Refrigerated)</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Colocasia leaves, Gram flour, Tamarind, Jaggery</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹200 / 500g</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Patra" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-5" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_5.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Motichur Laddu</h2><h2 class="lang-gu">મોતીચૂર લાડુ</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>15 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Desi Ghee, Gram flour, Sugar</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹450 / 1kg</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Motichur%20Laddu" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-6" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_6.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Bundi Laddu</h2><h2 class="lang-gu">બુંદી લાડુ</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>20 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Gram flour, Sugar, Dry fruits</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹350 / 1kg</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Bundi%20Laddu" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-7" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_7.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Sing Bhujiya</h2><h2 class="lang-gu">સીંગ ભુજિયા</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>60 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Peanuts, Gram flour, Spices</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹240 / 500g</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Sing%20Bhujiya" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="product-8" class="full-modal">
+        <a href="#close" class="modal-overlay"></a>
+        <div class="product-modal-inner">
+            <a href="#close" style="position:absolute; top:15px; right:20px; font-size:30px; text-decoration:none; color:#232323; z-index:10;">&times;</a>
+            <div class="prod-modal-img"><img src="product_8.png" alt="Product"></div>
+            <div class="prod-modal-info">
+                <h2 class="lang-en">Tam Tam</h2><h2 class="lang-gu">તમ તમ</h2>
+                <div class="specs">
+                    <div class="spec-row"><span><span class="lang-en">Shelf Life</span><span class="lang-gu">શેલ્ફ લાઇફ</span></span> <strong>45 Days</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Ingredients</span><span class="lang-gu">સામગ્રી</span></span> <strong>Gram flour, Spices</strong></div>
+                    <div class="spec-row"><span><span class="lang-en">Price</span><span class="lang-gu">કિંમત</span></span> <strong>₹220 / 500g</strong></div>
+                </div>
+                <a href="https://wa.me/919998563318?text=Inquiry:%20Tam%20Tam" class="btn-luxury" target="_blank"><span class="lang-en">Confirm Order via WhatsApp</span><span class="lang-gu">વોટ્સએપ દ્વારા ઓર્ડર કન્ફર્મ કરો</span></a>
+            </div>
+        </div>
+    </div>
 
-            document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(element => {
-                observer.observe(element);
-            });
-
-            // Update Active Nav Link & Header on Scroll
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('nav a');
-            const header = document.querySelector('header');
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (scrollY >= (sectionTop - 100)) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(a => {
-                    a.classList.remove('active');
-                    if (a.getAttribute('href') === `#${current}`) {
-                        a.classList.add('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
