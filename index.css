@@ -936,11 +936,13 @@ footer {
   width: 90%;
   border-radius: 8px;
   overflow: hidden;
-  transform: translateY(50px);
-  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) !important;
+  transform: translateY(100px) scale(0.95);
 }
 .full-modal:target .product-modal-inner {
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 .prod-modal-img {
   width: 50%;
@@ -1068,4 +1070,18 @@ html {
 @media (max-width: 768px) {
   .gallery-slideshow { height: 400px; }
   .slide-caption h3 { font-size: 24px; }
+}
+
+/* 120FPS HARDWARE ACCELERATION (GPU COMPOSITING) */
+.luxury-card, 
+.gallery-item img, 
+.slide img, 
+.full-modal, 
+.product-modal-inner,
+.btn-luxury {
+  will-change: transform, opacity, box-shadow;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
