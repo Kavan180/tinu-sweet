@@ -130,9 +130,9 @@ a {
 
 /* Header & Navigation */
 header {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(252, 250, 247, 0.8) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
   border-bottom: 2px solid var(--clr-accent);
   padding: 20px 0;
   position: sticky;
@@ -144,7 +144,7 @@ header {
 
 header.scrolled {
   padding: 10px 0;
-  background-color: rgba(255, 255, 255, 0.95);
+  background: rgba(252, 250, 247, 0.9) !important;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
